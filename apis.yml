@@ -1,7 +1,23 @@
 aid: so-sure
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/so-sure.png
 name: So Sure
-description: So Sure is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: So Sure (wearesosure.com), operated by Open Insurance Services UK Limited, was a UK
+  app-based social insurance provider offering mobile phone and home contents insurance, known for a
+  social/peer insurance model that rewarded claim-free groups. It was an early portfolio company of
+  500 Global. The company has stopped selling new policies and has transitioned its mobile phone
+  cover to the Huddle Insurance brand while continuing to service existing customers. So Sure
+  publishes no public developer program, API, SDK, or technical documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/so-sure/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +25,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: rebranded
+x-status-note: New policies discontinued; mobile cover transitioned to Huddle Insurance brand.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Insurance
+- InsurTech
+- Mobile Insurance
+- Contents Insurance
+- Consumer
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/so-sure-domain-security.yml
 - type: Website
   url: https://wearesosure.com
+- type: Support
+  url: https://wearesosure.com/contact-us
+- type: TermsOfService
+  url: https://cdn.prod.website-files.com/6678f8b504d915650c2aaca0/6763ff51bd6574956c82b83c_OISUK%20Terms%20of%20Business.pdf
+- type: PrivacyPolicy
+  url: https://www.beopen.com/terms/uk#uk-terms
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
